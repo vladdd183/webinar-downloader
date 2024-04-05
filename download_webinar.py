@@ -1,5 +1,4 @@
 import os
-from collections import namedtuple
 import asyncio
 from datetime import datetime
 import httpx
@@ -13,6 +12,8 @@ install(show_locals=True)
 
 DOWNLOAD_DIR = "downloads"
 SKIP_MODULES = [
+    "conference.add",
+    "conference.delete",
     "eventsession.stop",
     "screensharing.stream.delete",
     "mediasession.update",
@@ -26,13 +27,6 @@ SKIP_MODULES = [
 ]
 
 
-def dict_to_object(d):
-    for k, v in d.items():
-        if isinstance(v, dict):
-            d[k] = dict_to_object(v)
-    return namedtuple("object", d.keys())(*d.values())
-
-
 def fetch_event_data(event_id):
     params = {"withoutCuts": "false"}
     response = requests.get(
@@ -40,45 +34,43 @@ def fetch_event_data(event_id):
         params=params,
     )
     data = response.json()
-    return dict_to_object(data)
+    return data
 
 
 def process_mediasession(mediasession, start_time):
-    if isinstance(mediasession, dict):
-        mediasession = dict_to_object(mediasession)
-    media_type = mediasession.stream._fields[1]
-    time = mediasession.time - start_time
-    url = mediasession.url
+    media_type = list(mediasession["stream"].keys())[1] + ".mp4"
+    time = mediasession["time"] - start_time
+    url = mediasession["url"]
     return time, media_type, url
 
 
 def process_message(message, start_time):
-    if isinstance(message, dict):
-        message = dict_to_object(message)
-    create_at = datetime.strptime(message.createAt, "%Y-%m-%dT%H:%M:%S%z").timestamp()
+    create_at = datetime.strptime(
+        message["createAt"], "%Y-%m-%dT%H:%M:%S%z"
+    ).timestamp()
     time = create_at - start_time
-    author_name = message.authorName
-    text = message.text
+    author_name = message["authorName"]
+    text = message["text"]
     return time, author_name, text
 
 
 def process_event_logs(event_logs):
     urls = []
     messages = []
-    start_time = event_logs.pop(0).get("time")
+    files = []
+    start_time = event_logs.pop(0)["time"]
 
     for event in event_logs:
-        event = dict_to_object(event)
-        data = event.data
-        module = event.module
+        data = event["data"]
+        module = event["module"]
 
         if module in SKIP_MODULES:
             continue
 
         if module == "cut.end":
-            mediasession = event.snapshot.data.mediasession
+            mediasession = event["snapshot"]["data"]["mediasession"]
             urls.extend(process_mediasession(x, start_time) for x in mediasession)
-            message = event.snapshot.data.message
+            message = event["snapshot"]["data"]["message"]
             messages.extend(process_message(x, start_time) for x in message)
             continue
 
@@ -87,14 +79,20 @@ def process_event_logs(event_logs):
                 messages.append(process_message(data, start_time))
             case "mediasession.add":
                 urls.append(process_mediasession(data, start_time))
+            case "presentation.update":
+                reference = data["fileReference"]
+                slide = reference["slide"]
+                urls.append((event["time"] - start_time, "slide.jpg", slide["url"]))
+                file = reference["file"]
+                files.append((file["name"], file["url"]))
             case _:
                 print(event)
 
-    return urls, messages
+    return urls, messages, files
 
 
 async def download_file(time, media_type, url, client):
-    path = f"{DOWNLOAD_DIR}/{time}_{media_type}.mp4"
+    path = f"{DOWNLOAD_DIR}/{time}_{media_type}"
     print(f"Старт {path}")
     async with client.stream("GET", url) as response:
         response.raise_for_status()
@@ -114,9 +112,9 @@ async def main():
 
     event_id = int(input("Ссылка: ").split("/")[-1])
     data = fetch_event_data(event_id)
-    event_logs = data.eventLogs
+    event_logs = data["eventLogs"]
 
-    urls, messages = process_event_logs(event_logs)
+    urls, messages, files = process_event_logs(event_logs)
 
     urls = list(set(urls))
     min_value = min(row[0] for row in urls)
