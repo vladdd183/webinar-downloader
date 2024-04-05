@@ -91,8 +91,7 @@ def process_event_logs(event_logs):
     return urls, messages, files
 
 
-async def download_file(time, media_type, url, client):
-    path = f"{DOWNLOAD_DIR}/{time}_{media_type}"
+async def download_file(path, url, client):
     print(f"Старт {path}")
     async with client.stream("GET", url) as response:
         response.raise_for_status()
@@ -106,7 +105,7 @@ async def main():
     os.makedirs(DOWNLOAD_DIR, exist_ok=True)
 
     print(
-        "Введите ссылку вебинара (пример: https://events.webinar.ru/21390906/1068308362/record-new/1285041197) Важно без слеша в конце. Вообще нужен просто последний год, можно и его ввести"
+        "Введите ссылку вебинара (пример: https://events.webinar.ru/j/21390906/100137538/record-new/1122397272) Важно без слеша в конце. Вообще нужен просто последний год, можно и его ввести"
     )
     sleep(0.1)
 
@@ -115,8 +114,10 @@ async def main():
     event_logs = data["eventLogs"]
 
     urls, messages, files = process_event_logs(event_logs)
+    files = list(set(files))
 
     urls = list(set(urls))
+
     min_value = min(row[0] for row in urls)
     urls = [(row[0] - min_value, row[1], row[2]) for row in urls]
 
@@ -129,9 +130,20 @@ async def main():
 
     async with httpx.AsyncClient(timeout=600) as client:
         tasks = [
-            asyncio.create_task(download_file(time, media_type, url, client))
+            asyncio.create_task(
+                download_file(f"{DOWNLOAD_DIR}/{time}_{media_type}", url, client)
+            )
             for time, media_type, url in urls
         ]
+
+        tasks.extend(
+            [
+                asyncio.create_task(
+                    download_file(f"{DOWNLOAD_DIR}/FILE_{name}", url, client)
+                )
+                for name, url in files
+            ]
+        )
         await asyncio.gather(*tasks)
 
 
