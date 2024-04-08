@@ -79,7 +79,7 @@ def process_event_logs(event_logs):
                 0,
                 {
                     "id": 1,
-                    "time": datetime.fromisoformat(x["createAt"]).timestamp(),
+                    "time": datetime.strptime(x["createAt"], "%Y-%m-%dT%H:%M:%S%z").timestamp(),
                     "data": x,
                     "module": "message.add",
                 },
@@ -142,14 +142,15 @@ async def download_file(path, url, client):
 async def main():
     os.makedirs(DOWNLOAD_DIR, exist_ok=True)
 
-    print(
-        "Введите ссылку вебинара (пример: https://events.webinar.ru/j/21390906/100137538/record-new/1122397272) Важно без слеша в конце. Вообще нужен просто последний год, можно и его ввести"
-    )
-    sleep(0.1)
-
-    event_id = int(input("Ссылка: ").split("/")[-1])
+    # print(
+    #     "Введите ссылку вебинара (пример: https://events.webinar.ru/j/21390906/100137538/record-new/1122397272) Важно без слеша в конце. Вообще нужен просто последний год, можно и его ввести"
+    # )
+    # sleep(0.1)
+    #
+    # event_id = int(input("Ссылка: ").split("/")[-1])
     # event_id = 1122397272
     # event_id = 1794592932
+    event_id = os.getenv("event_id")
     data = fetch_event_data(event_id)
     event_logs = data["eventLogs"]
     name = data["name"]
