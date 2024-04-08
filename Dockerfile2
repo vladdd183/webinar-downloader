@@ -1,0 +1,18 @@
+FROM nvidia/cuda:12.1.1-runtime-ubuntu20.04 
+RUN apt-get update && \
+    apt-get install -y python3 python-is-python3 python3-pip python3-dev && \
+    rm -rf /var/lib/apt/lists/*
+
+
+
+# Устанавливаем рабочую директорию
+WORKDIR /app
+
+COPY requirements.txt .
+# Устанавливаем зависимости
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY new_mount.py .
+
+# Запускаем скрипт при старте контейнера
+CMD ["python", "new_mount.py"]

@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  mount:
+    build:
+      context: .
+      dockerfile: Dockerfile2
+    volumes:
+      - .:/app
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
