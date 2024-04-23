@@ -1,0 +1,885 @@
+2024-04-23 15:49:31 sed 's#@@PREFIX@@#/usr/local#' ffnvcodec.pc.in > ffnvcodec.pc
+2024-04-23 15:49:31 install -m 0755 -d '/usr/local/include/ffnvcodec'
+2024-04-23 15:49:31 install -m 0644 include/ffnvcodec/*.h '/usr/local/include/ffnvcodec'
+2024-04-23 15:49:31 install -m 0755 -d '/usr/local/lib/pkgconfig'
+2024-04-23 15:49:31 install -m 0644 ffnvcodec.pc '/usr/local/lib/pkgconfig'
+2024-04-23 15:49:30 Cloning into 'nv-codec-headers'...
+2024-04-23 15:49:31 /app/setupffmpeg.sh: line 3: cd: $'\342\200\223': No such file or directory
+2024-04-23 15:49:31 Cloning into 'ffmpeg'...
+2024-04-23 15:51:27 Reading package lists...
+2024-04-23 15:51:28 Building dependency tree...
+2024-04-23 15:51:28 Reading state information...
+2024-04-23 15:51:28 build-essential is already the newest version (12.9ubuntu3).
+2024-04-23 15:51:28 build-essential set to manually installed.
+2024-04-23 15:51:28 The following additional packages will be installed:
+2024-04-23 15:51:28   autoconf automake autotools-dev cmake-data dh-elpa-helper emacsen-common
+2024-04-23 15:51:28   file libarchive13 libc-dev-bin libcurl4 libicu70 libjsoncpp25 libltdl-dev
+2024-04-23 15:51:28   libltdl7 libmagic-mgc libmagic1 librhash0 libsigsegv2 libuv1 libxml2 m4
+2024-04-23 15:51:28 Suggested packages:
+2024-04-23 15:51:28   autoconf-archive gnu-standards autoconf-doc gettext cmake-doc ninja-build
+2024-04-23 15:51:28   cmake-format lrzip glibc-doc locales manpages-dev libtool-doc gfortran
+2024-04-23 15:51:28   | fortran95-compiler gcj-jdk m4-doc zip
+2024-04-23 15:51:28 Recommended packages:
+2024-04-23 15:51:28   manpages manpages-dev libc-devtools libnss-nis libnss-nisplus
+2024-04-23 15:51:28 The following NEW packages will be installed:
+2024-04-23 15:51:28   autoconf automake autotools-dev cmake cmake-data dh-elpa-helper
+2024-04-23 15:51:28   emacsen-common file libarchive13 libcurl4 libicu70 libjsoncpp25 libltdl-dev
+2024-04-23 15:51:28   libltdl7 libmagic-mgc libmagic1 libnuma-dev libnuma1 librhash0 libsigsegv2
+2024-04-23 15:51:28   libtool libuv1 libxml2 m4 unzip wget yasm
+2024-04-23 15:51:28 The following packages will be upgraded:
+2024-04-23 15:51:28   libc-dev-bin libc6 libc6-dev
+2024-04-23 15:51:28 3 upgraded, 27 newly installed, 0 to remove and 15 not upgraded.
+2024-04-23 15:51:28 Need to get 27.5 MB of archives.
+2024-04-23 15:51:28 After this operation, 89.6 MB of additional disk space will be used.
+2024-04-23 15:51:28 Get:1 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libc6-dev amd64 2.35-0ubuntu3.7 [2100 kB]
+2024-04-23 15:51:30 Get:2 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libc-dev-bin amd64 2.35-0ubuntu3.7 [20.3 kB]
+2024-04-23 15:51:31 Get:3 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libc6 amd64 2.35-0ubuntu3.7 [3235 kB]
+2024-04-23 15:51:34 Get:4 http://archive.ubuntu.com/ubuntu jammy/main amd64 libicu70 amd64 70.1-2 [10.6 MB]
+2024-04-23 15:51:44 Get:5 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libxml2 amd64 2.9.13+dfsg-1ubuntu0.4 [763 kB]
+2024-04-23 15:51:45 Get:6 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libmagic-mgc amd64 1:5.41-3ubuntu0.1 [257 kB]
+2024-04-23 15:51:46 Get:7 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libmagic1 amd64 1:5.41-3ubuntu0.1 [87.2 kB]
+2024-04-23 15:51:47 Get:8 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 file amd64 1:5.41-3ubuntu0.1 [21.5 kB]
+2024-04-23 15:51:47 Get:9 http://archive.ubuntu.com/ubuntu jammy/main amd64 libnuma1 amd64 2.0.14-3ubuntu2 [22.5 kB]
+2024-04-23 15:51:47 Get:10 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libuv1 amd64 1.43.0-1ubuntu0.1 [92.7 kB]
+2024-04-23 15:51:48 Get:11 http://archive.ubuntu.com/ubuntu jammy/main amd64 wget amd64 1.21.2-2ubuntu1 [367 kB]
+2024-04-23 15:51:49 Get:12 http://archive.ubuntu.com/ubuntu jammy/main amd64 libsigsegv2 amd64 2.13-1ubuntu3 [14.6 kB]
+2024-04-23 15:51:49 Get:13 http://archive.ubuntu.com/ubuntu jammy/main amd64 m4 amd64 1.4.18-5ubuntu2 [199 kB]
+2024-04-23 15:51:50 Get:14 http://archive.ubuntu.com/ubuntu jammy/main amd64 autoconf all 2.71-2 [338 kB]
+2024-04-23 15:51:51 Get:15 http://archive.ubuntu.com/ubuntu jammy/main amd64 autotools-dev all 20220109.1 [44.9 kB]
+2024-04-23 15:51:51 Get:16 http://archive.ubuntu.com/ubuntu jammy/main amd64 automake all 1:1.16.5-1.3 [558 kB]
+2024-04-23 15:51:52 Get:17 http://archive.ubuntu.com/ubuntu jammy/main amd64 libarchive13 amd64 3.6.0-1ubuntu1 [368 kB]
+2024-04-23 15:51:53 Get:18 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcurl4 amd64 7.81.0-1ubuntu1.16 [290 kB]
+2024-04-23 15:51:54 Get:19 http://archive.ubuntu.com/ubuntu jammy/main amd64 libjsoncpp25 amd64 1.9.5-3 [80.0 kB]
+2024-04-23 15:51:54 Get:20 http://archive.ubuntu.com/ubuntu jammy/main amd64 librhash0 amd64 1.4.2-1ubuntu1 [125 kB]
+2024-04-23 15:51:55 Get:21 http://archive.ubuntu.com/ubuntu jammy/main amd64 dh-elpa-helper all 2.0.9ubuntu1 [7610 B]
+2024-04-23 15:51:55 Get:22 http://archive.ubuntu.com/ubuntu jammy/main amd64 emacsen-common all 3.0.4 [14.9 kB]
+2024-04-23 15:51:55 Get:23 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 cmake-data all 3.22.1-1ubuntu1.22.04.2 [1913 kB]
+2024-04-23 15:51:57 Get:24 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 cmake amd64 3.22.1-1ubuntu1.22.04.2 [5010 kB]
+2024-04-23 15:52:02 Get:25 http://archive.ubuntu.com/ubuntu jammy/main amd64 libltdl7 amd64 2.4.6-15build2 [39.6 kB]
+2024-04-23 15:52:03 Get:26 http://archive.ubuntu.com/ubuntu jammy/main amd64 libltdl-dev amd64 2.4.6-15build2 [169 kB]
+2024-04-23 15:52:03 Get:27 http://archive.ubuntu.com/ubuntu jammy/main amd64 libtool all 2.4.6-15build2 [164 kB]
+2024-04-23 15:52:04 Get:28 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 unzip amd64 6.0-26ubuntu3.2 [175 kB]
+2024-04-23 15:52:05 Get:29 http://archive.ubuntu.com/ubuntu jammy/universe amd64 yasm amd64 1.3.0-2.1 [413 kB]
+2024-04-23 15:52:06 Get:30 http://archive.ubuntu.com/ubuntu jammy/main amd64 libnuma-dev amd64 2.0.14-3ubuntu2 [35.9 kB]
+2024-04-23 15:52:06 debconf: delaying package configuration, since apt-utils is not installed
+2024-04-23 15:52:06 Fetched 27.5 MB in 38s (722 kB/s)
+(Reading database ... 18468 files and directories currently installed.)
+2024-04-23 15:52:06 Preparing to unpack .../libc6-dev_2.35-0ubuntu3.7_amd64.deb ...
+2024-04-23 15:52:06 Unpacking libc6-dev:amd64 (2.35-0ubuntu3.7) over (2.35-0ubuntu3.6) ...
+2024-04-23 15:52:08 Preparing to unpack .../libc-dev-bin_2.35-0ubuntu3.7_amd64.deb ...
+2024-04-23 15:52:08 Unpacking libc-dev-bin (2.35-0ubuntu3.7) over (2.35-0ubuntu3.6) ...
+2024-04-23 15:52:08 Preparing to unpack .../libc6_2.35-0ubuntu3.7_amd64.deb ...
+2024-04-23 15:52:08 Unpacking libc6:amd64 (2.35-0ubuntu3.7) over (2.35-0ubuntu3.6) ...
+2024-04-23 15:52:09 Setting up libc6:amd64 (2.35-0ubuntu3.7) ...
+2024-04-23 15:52:10 Selecting previously unselected package libicu70:amd64.
+(Reading database ... 18468 files and directories currently installed.)
+2024-04-23 15:52:10 Preparing to unpack .../00-libicu70_70.1-2_amd64.deb ...
+2024-04-23 15:52:10 Unpacking libicu70:amd64 (70.1-2) ...
+2024-04-23 15:52:10 Selecting previously unselected package libxml2:amd64.
+2024-04-23 15:52:10 Preparing to unpack .../01-libxml2_2.9.13+dfsg-1ubuntu0.4_amd64.deb ...
+2024-04-23 15:52:10 Unpacking libxml2:amd64 (2.9.13+dfsg-1ubuntu0.4) ...
+2024-04-23 15:52:10 Selecting previously unselected package libmagic-mgc.
+2024-04-23 15:52:10 Preparing to unpack .../02-libmagic-mgc_1%3a5.41-3ubuntu0.1_amd64.deb ...
+2024-04-23 15:52:10 Unpacking libmagic-mgc (1:5.41-3ubuntu0.1) ...
+2024-04-23 15:52:10 Selecting previously unselected package libmagic1:amd64.
+2024-04-23 15:52:10 Preparing to unpack .../03-libmagic1_1%3a5.41-3ubuntu0.1_amd64.deb ...
+2024-04-23 15:52:10 Unpacking libmagic1:amd64 (1:5.41-3ubuntu0.1) ...
+2024-04-23 15:52:10 Selecting previously unselected package file.
+2024-04-23 15:52:10 Preparing to unpack .../04-file_1%3a5.41-3ubuntu0.1_amd64.deb ...
+2024-04-23 15:52:10 Unpacking file (1:5.41-3ubuntu0.1) ...
+2024-04-23 15:52:10 Selecting previously unselected package libnuma1:amd64.
+2024-04-23 15:52:10 Preparing to unpack .../05-libnuma1_2.0.14-3ubuntu2_amd64.deb ...
+2024-04-23 15:52:10 Unpacking libnuma1:amd64 (2.0.14-3ubuntu2) ...
+2024-04-23 15:52:10 Selecting previously unselected package libuv1:amd64.
+2024-04-23 15:52:10 Preparing to unpack .../06-libuv1_1.43.0-1ubuntu0.1_amd64.deb ...
+2024-04-23 15:52:10 Unpacking libuv1:amd64 (1.43.0-1ubuntu0.1) ...
+2024-04-23 15:52:10 Selecting previously unselected package wget.
+2024-04-23 15:52:10 Preparing to unpack .../07-wget_1.21.2-2ubuntu1_amd64.deb ...
+2024-04-23 15:52:10 Unpacking wget (1.21.2-2ubuntu1) ...
+2024-04-23 15:52:10 Selecting previously unselected package libsigsegv2:amd64.
+2024-04-23 15:52:10 Preparing to unpack .../08-libsigsegv2_2.13-1ubuntu3_amd64.deb ...
+2024-04-23 15:52:10 Unpacking libsigsegv2:amd64 (2.13-1ubuntu3) ...
+2024-04-23 15:52:10 Selecting previously unselected package m4.
+2024-04-23 15:52:10 Preparing to unpack .../09-m4_1.4.18-5ubuntu2_amd64.deb ...
+2024-04-23 15:52:10 Unpacking m4 (1.4.18-5ubuntu2) ...
+2024-04-23 15:52:10 Selecting previously unselected package autoconf.
+2024-04-23 15:52:10 Preparing to unpack .../10-autoconf_2.71-2_all.deb ...
+2024-04-23 15:52:10 Unpacking autoconf (2.71-2) ...
+2024-04-23 15:52:10 Selecting previously unselected package autotools-dev.
+2024-04-23 15:52:10 Preparing to unpack .../11-autotools-dev_20220109.1_all.deb ...
+2024-04-23 15:52:10 Unpacking autotools-dev (20220109.1) ...
+2024-04-23 15:52:10 Selecting previously unselected package automake.
+2024-04-23 15:52:10 Preparing to unpack .../12-automake_1%3a1.16.5-1.3_all.deb ...
+2024-04-23 15:52:10 Unpacking automake (1:1.16.5-1.3) ...
+2024-04-23 15:52:10 Selecting previously unselected package libarchive13:amd64.
+2024-04-23 15:52:10 Preparing to unpack .../13-libarchive13_3.6.0-1ubuntu1_amd64.deb ...
+2024-04-23 15:52:10 Unpacking libarchive13:amd64 (3.6.0-1ubuntu1) ...
+2024-04-23 15:52:10 Selecting previously unselected package libcurl4:amd64.
+2024-04-23 15:52:10 Preparing to unpack .../14-libcurl4_7.81.0-1ubuntu1.16_amd64.deb ...
+2024-04-23 15:52:10 Unpacking libcurl4:amd64 (7.81.0-1ubuntu1.16) ...
+2024-04-23 15:52:10 Selecting previously unselected package libjsoncpp25:amd64.
+2024-04-23 15:52:10 Preparing to unpack .../15-libjsoncpp25_1.9.5-3_amd64.deb ...
+2024-04-23 15:52:10 Unpacking libjsoncpp25:amd64 (1.9.5-3) ...
+2024-04-23 15:52:10 Selecting previously unselected package librhash0:amd64.
+2024-04-23 15:52:10 Preparing to unpack .../16-librhash0_1.4.2-1ubuntu1_amd64.deb ...
+2024-04-23 15:52:10 Unpacking librhash0:amd64 (1.4.2-1ubuntu1) ...
+2024-04-23 15:52:10 Selecting previously unselected package dh-elpa-helper.
+2024-04-23 15:52:10 Preparing to unpack .../17-dh-elpa-helper_2.0.9ubuntu1_all.deb ...
+2024-04-23 15:52:10 Unpacking dh-elpa-helper (2.0.9ubuntu1) ...
+2024-04-23 15:52:11 Selecting previously unselected package emacsen-common.
+2024-04-23 15:52:11 Preparing to unpack .../18-emacsen-common_3.0.4_all.deb ...
+2024-04-23 15:52:11 Unpacking emacsen-common (3.0.4) ...
+2024-04-23 15:52:11 Selecting previously unselected package cmake-data.
+2024-04-23 15:52:11 Preparing to unpack .../19-cmake-data_3.22.1-1ubuntu1.22.04.2_all.deb ...
+2024-04-23 15:52:11 Unpacking cmake-data (3.22.1-1ubuntu1.22.04.2) ...
+2024-04-23 15:52:11 Selecting previously unselected package cmake.
+2024-04-23 15:52:11 Preparing to unpack .../20-cmake_3.22.1-1ubuntu1.22.04.2_amd64.deb ...
+2024-04-23 15:52:11 Unpacking cmake (3.22.1-1ubuntu1.22.04.2) ...
+2024-04-23 15:52:11 Selecting previously unselected package libltdl7:amd64.
+2024-04-23 15:52:11 Preparing to unpack .../21-libltdl7_2.4.6-15build2_amd64.deb ...
+2024-04-23 15:52:11 Unpacking libltdl7:amd64 (2.4.6-15build2) ...
+2024-04-23 15:52:11 Selecting previously unselected package libltdl-dev:amd64.
+2024-04-23 15:52:11 Preparing to unpack .../22-libltdl-dev_2.4.6-15build2_amd64.deb ...
+2024-04-23 15:52:11 Unpacking libltdl-dev:amd64 (2.4.6-15build2) ...
+2024-04-23 15:52:11 Selecting previously unselected package libtool.
+2024-04-23 15:52:11 Preparing to unpack .../23-libtool_2.4.6-15build2_all.deb ...
+2024-04-23 15:52:11 Unpacking libtool (2.4.6-15build2) ...
+2024-04-23 15:52:11 Selecting previously unselected package unzip.
+2024-04-23 15:52:11 Preparing to unpack .../24-unzip_6.0-26ubuntu3.2_amd64.deb ...
+2024-04-23 15:52:11 Unpacking unzip (6.0-26ubuntu3.2) ...
+2024-04-23 15:52:11 Selecting previously unselected package yasm.
+2024-04-23 15:52:11 Preparing to unpack .../25-yasm_1.3.0-2.1_amd64.deb ...
+2024-04-23 15:52:11 Unpacking yasm (1.3.0-2.1) ...
+2024-04-23 15:52:11 Selecting previously unselected package libnuma-dev:amd64.
+2024-04-23 15:52:11 Preparing to unpack .../26-libnuma-dev_2.0.14-3ubuntu2_amd64.deb ...
+2024-04-23 15:52:11 Unpacking libnuma-dev:amd64 (2.0.14-3ubuntu2) ...
+2024-04-23 15:52:12 Setting up wget (1.21.2-2ubuntu1) ...
+2024-04-23 15:52:12 Setting up libmagic-mgc (1:5.41-3ubuntu0.1) ...
+2024-04-23 15:52:12 Setting up unzip (6.0-26ubuntu3.2) ...
+2024-04-23 15:52:12 Setting up libmagic1:amd64 (1:5.41-3ubuntu0.1) ...
+2024-04-23 15:52:12 Setting up file (1:5.41-3ubuntu0.1) ...
+2024-04-23 15:52:12 Setting up yasm (1.3.0-2.1) ...
+2024-04-23 15:52:12 Setting up autotools-dev (20220109.1) ...
+2024-04-23 15:52:12 Setting up libuv1:amd64 (1.43.0-1ubuntu0.1) ...
+2024-04-23 15:52:12 Setting up emacsen-common (3.0.4) ...
+2024-04-23 15:52:12 Setting up dh-elpa-helper (2.0.9ubuntu1) ...
+2024-04-23 15:52:12 Setting up libsigsegv2:amd64 (2.13-1ubuntu3) ...
+2024-04-23 15:52:12 Setting up libjsoncpp25:amd64 (1.9.5-3) ...
+2024-04-23 15:52:12 Setting up libltdl7:amd64 (2.4.6-15build2) ...
+2024-04-23 15:52:12 Setting up libnuma1:amd64 (2.0.14-3ubuntu2) ...
+2024-04-23 15:52:12 Setting up librhash0:amd64 (1.4.2-1ubuntu1) ...
+2024-04-23 15:52:12 Setting up libcurl4:amd64 (7.81.0-1ubuntu1.16) ...
+2024-04-23 15:52:12 Setting up cmake-data (3.22.1-1ubuntu1.22.04.2) ...
+2024-04-23 15:52:13 Setting up libc-dev-bin (2.35-0ubuntu3.7) ...
+2024-04-23 15:52:13 Setting up libicu70:amd64 (70.1-2) ...
+2024-04-23 15:52:13 Setting up m4 (1.4.18-5ubuntu2) ...
+2024-04-23 15:52:13 Setting up autoconf (2.71-2) ...
+2024-04-23 15:52:13 Setting up libc6-dev:amd64 (2.35-0ubuntu3.7) ...
+2024-04-23 15:52:13 Setting up libxml2:amd64 (2.9.13+dfsg-1ubuntu0.4) ...
+2024-04-23 15:52:13 Setting up automake (1:1.16.5-1.3) ...
+2024-04-23 15:52:13 update-alternatives: using /usr/bin/automake-1.16 to provide /usr/bin/automake (automake) in auto mode
+2024-04-23 15:52:13 update-alternatives: warning: skip creation of /usr/share/man/man1/automake.1.gz because associated file /usr/share/man/man1/automake-1.16.1.gz (of link group automake) doesn't exist
+2024-04-23 15:52:13 update-alternatives: warning: skip creation of /usr/share/man/man1/aclocal.1.gz because associated file /usr/share/man/man1/aclocal-1.16.1.gz (of link group automake) doesn't exist
+2024-04-23 15:52:13 Setting up libtool (2.4.6-15build2) ...
+2024-04-23 15:52:13 Setting up libarchive13:amd64 (3.6.0-1ubuntu1) ...
+2024-04-23 15:52:13 Setting up libnuma-dev:amd64 (2.0.14-3ubuntu2) ...
+2024-04-23 15:52:13 Setting up libltdl-dev:amd64 (2.4.6-15build2) ...
+2024-04-23 15:52:13 Setting up cmake (3.22.1-1ubuntu1.22.04.2) ...
+2024-04-23 15:52:13 Processing triggers for libc-bin (2.35-0ubuntu3.6) ...
+2024-04-23 15:52:13 /sbin/ldconfig.real: /lib/x86_64-linux-gnu/libcudadebugger.so.1 is not a symbolic link
+2024-04-23 15:52:13 
+2024-04-23 15:52:13 /sbin/ldconfig.real: /lib/x86_64-linux-gnu/libcuda.so.1 is not a symbolic link
+2024-04-23 15:52:13 
+2024-04-23 15:52:18 install prefix            /usr/local
+2024-04-23 15:52:18 source path               /app/nv-codec-headers/ffmpeg
+2024-04-23 15:52:18 C compiler                gcc
+2024-04-23 15:52:18 C library                 glibc
+2024-04-23 15:52:18 ARCH                      x86 (generic)
+2024-04-23 15:52:18 big-endian                no
+2024-04-23 15:52:18 runtime cpu detection     yes
+2024-04-23 15:52:18 standalone assembly       yes
+2024-04-23 15:52:18 x86 assembler             yasm
+2024-04-23 15:52:18 MMX enabled               yes
+2024-04-23 15:52:18 MMXEXT enabled            yes
+2024-04-23 15:52:18 3DNow! enabled            yes
+2024-04-23 15:52:18 3DNow! extended enabled   yes
+2024-04-23 15:52:18 SSE enabled               yes
+2024-04-23 15:52:18 SSSE3 enabled             yes
+2024-04-23 15:52:18 AESNI enabled             yes
+2024-04-23 15:52:18 AVX enabled               yes
+2024-04-23 15:52:18 AVX2 enabled              yes
+2024-04-23 15:52:18 AVX-512 enabled           yes
+2024-04-23 15:52:18 AVX-512ICL enabled        yes
+2024-04-23 15:52:18 XOP enabled               yes
+2024-04-23 15:52:18 FMA3 enabled              yes
+2024-04-23 15:52:18 FMA4 enabled              yes
+2024-04-23 15:52:18 i686 features enabled     yes
+2024-04-23 15:52:18 CMOV is fast              yes
+2024-04-23 15:52:18 EBX available             yes
+2024-04-23 15:52:18 EBP available             yes
+2024-04-23 15:52:18 debug symbols             yes
+2024-04-23 15:52:18 strip symbols             yes
+2024-04-23 15:52:18 optimize for size         no
+2024-04-23 15:52:18 optimizations             yes
+2024-04-23 15:52:18 static                    no
+2024-04-23 15:52:18 shared                    yes
+2024-04-23 15:52:18 postprocessing support    no
+2024-04-23 15:52:18 network support           yes
+2024-04-23 15:52:18 threading support         pthreads
+2024-04-23 15:52:18 safe bitstream reader     yes
+2024-04-23 15:52:18 texi2html enabled         no
+2024-04-23 15:52:18 perl enabled              yes
+2024-04-23 15:52:18 pod2man enabled           yes
+2024-04-23 15:52:18 makeinfo enabled          no
+2024-04-23 15:52:18 makeinfo supports HTML    no
+2024-04-23 15:52:18 xmllint enabled           no
+2024-04-23 15:52:18 
+2024-04-23 15:52:18 External libraries:
+2024-04-23 15:52:18 iconv                   zlib
+2024-04-23 15:52:18 
+2024-04-23 15:52:18 External libraries providing hardware acceleration:
+2024-04-23 15:52:18 cuda_llvm               libnpp
+2024-04-23 15:52:18 cuda_nvcc               v4l2_m2m
+2024-04-23 15:52:18 
+2024-04-23 15:52:18 Libraries:
+2024-04-23 15:52:18 avcodec                 avformat                swscale
+2024-04-23 15:52:18 avdevice                avutil
+2024-04-23 15:52:18 avfilter                swresample
+2024-04-23 15:52:18 
+2024-04-23 15:52:18 Programs:
+2024-04-23 15:52:18 ffmpeg                  ffprobe
+2024-04-23 15:52:18 
+2024-04-23 15:52:18 Enabled decoders:
+2024-04-23 15:52:18 aac                     flic                    phm
+2024-04-23 15:52:18 aac_fixed               flv                     photocd
+2024-04-23 15:52:18 aac_latm                fmvc                    pictor
+2024-04-23 15:52:18 aasc                    fourxm                  pixlet
+2024-04-23 15:52:18 ac3                     fraps                   pjs
+2024-04-23 15:52:18 ac3_fixed               frwu                    png
+2024-04-23 15:52:18 acelp_kelvin            ftr                     ppm
+2024-04-23 15:52:18 adpcm_4xm               g2m                     prores
+2024-04-23 15:52:18 adpcm_adx               g723_1                  prosumer
+2024-04-23 15:52:18 adpcm_afc               g729                    psd
+2024-04-23 15:52:18 adpcm_agm               gdv                     ptx
+2024-04-23 15:52:18 adpcm_aica              gem                     qcelp
+2024-04-23 15:52:18 adpcm_argo              gif                     qdm2
+2024-04-23 15:52:18 adpcm_ct                gremlin_dpcm            qdmc
+2024-04-23 15:52:18 adpcm_dtk               gsm                     qdraw
+2024-04-23 15:52:18 adpcm_ea                gsm_ms                  qoa
+2024-04-23 15:52:18 adpcm_ea_maxis_xa       h261                    qoi
+2024-04-23 15:52:18 adpcm_ea_r1             h263                    qpeg
+2024-04-23 15:52:18 adpcm_ea_r2             h263_v4l2m2m            qtrle
+2024-04-23 15:52:18 adpcm_ea_r3             h263i                   r10k
+2024-04-23 15:52:18 adpcm_ea_xas            h263p                   r210
+2024-04-23 15:52:18 adpcm_g722              h264                    ra_144
+2024-04-23 15:52:18 adpcm_g726              h264_v4l2m2m            ra_288
+2024-04-23 15:52:18 adpcm_g726le            hap                     ralf
+2024-04-23 15:52:18 adpcm_ima_acorn         hca                     rasc
+2024-04-23 15:52:18 adpcm_ima_alp           hcom                    rawvideo
+2024-04-23 15:52:18 adpcm_ima_amv           hdr                     realtext
+2024-04-23 15:52:18 adpcm_ima_apc           hevc                    rka
+2024-04-23 15:52:18 adpcm_ima_apm           hevc_v4l2m2m            rl2
+2024-04-23 15:52:18 adpcm_ima_cunning       hnm4_video              roq
+2024-04-23 15:52:18 adpcm_ima_dat4          hq_hqa                  roq_dpcm
+2024-04-23 15:52:18 adpcm_ima_dk3           hqx                     rpza
+2024-04-23 15:52:18 adpcm_ima_dk4           huffyuv                 rscc
+2024-04-23 15:52:18 adpcm_ima_ea_eacs       hymt                    rtv1
+2024-04-23 15:52:18 adpcm_ima_ea_sead       iac                     rv10
+2024-04-23 15:52:18 adpcm_ima_iss           idcin                   rv20
+2024-04-23 15:52:18 adpcm_ima_moflex        idf                     rv30
+2024-04-23 15:52:18 adpcm_ima_mtf           iff_ilbm                rv40
+2024-04-23 15:52:18 adpcm_ima_oki           ilbc                    s302m
+2024-04-23 15:52:18 adpcm_ima_qt            imc                     sami
+2024-04-23 15:52:18 adpcm_ima_rad           imm4                    sanm
+2024-04-23 15:52:18 adpcm_ima_smjpeg        imm5                    sbc
+2024-04-23 15:52:18 adpcm_ima_ssi           indeo2                  scpr
+2024-04-23 15:52:18 adpcm_ima_wav           indeo3                  screenpresso
+2024-04-23 15:52:18 adpcm_ima_ws            indeo4                  sdx2_dpcm
+2024-04-23 15:52:18 adpcm_ms                indeo5                  sga
+2024-04-23 15:52:18 adpcm_mtaf              interplay_acm           sgi
+2024-04-23 15:52:18 adpcm_psx               interplay_dpcm          sgirle
+2024-04-23 15:52:18 adpcm_sbpro_2           interplay_video         sheervideo
+2024-04-23 15:52:18 adpcm_sbpro_3           ipu                     shorten
+2024-04-23 15:52:18 adpcm_sbpro_4           jacosub                 simbiosis_imx
+2024-04-23 15:52:18 adpcm_swf               jpeg2000                sipr
+2024-04-23 15:52:18 adpcm_thp               jpegls                  siren
+2024-04-23 15:52:18 adpcm_thp_le            jv                      smackaud
+2024-04-23 15:52:18 adpcm_vima              kgv1                    smacker
+2024-04-23 15:52:18 adpcm_xa                kmvc                    smc
+2024-04-23 15:52:18 adpcm_xmd               lagarith                smvjpeg
+2024-04-23 15:52:18 adpcm_yamaha            lead                    snow
+2024-04-23 15:52:18 adpcm_zork              loco                    sol_dpcm
+2024-04-23 15:52:18 agm                     lscr                    sonic
+2024-04-23 15:52:18 aic                     m101                    sp5x
+2024-04-23 15:52:18 alac                    mace3                   speedhq
+2024-04-23 15:52:18 alias_pix               mace6                   speex
+2024-04-23 15:52:18 als                     magicyuv                srgc
+2024-04-23 15:52:18 amrnb                   mdec                    srt
+2024-04-23 15:52:18 amrwb                   media100                ssa
+2024-04-23 15:52:18 amv                     metasound               stl
+2024-04-23 15:52:18 anm                     microdvd                subrip
+2024-04-23 15:52:18 ansi                    mimic                   subviewer
+2024-04-23 15:52:18 anull                   misc4                   subviewer1
+2024-04-23 15:52:18 apac                    mjpeg                   sunrast
+2024-04-23 15:52:18 ape                     mjpegb                  svq1
+2024-04-23 15:52:18 apng                    mlp                     svq3
+2024-04-23 15:52:18 aptx                    mmvideo                 tak
+2024-04-23 15:52:18 aptx_hd                 mobiclip                targa
+2024-04-23 15:52:18 arbc                    motionpixels            targa_y216
+2024-04-23 15:52:18 argo                    movtext                 tdsc
+2024-04-23 15:52:18 ass                     mp1                     text
+2024-04-23 15:52:18 asv1                    mp1float                theora
+2024-04-23 15:52:18 asv2                    mp2                     thp
+2024-04-23 15:52:18 atrac1                  mp2float                tiertexseqvideo
+2024-04-23 15:52:18 atrac3                  mp3                     tiff
+2024-04-23 15:52:18 atrac3al                mp3adu                  tmv
+2024-04-23 15:52:18 atrac3p                 mp3adufloat             truehd
+2024-04-23 15:52:18 atrac3pal               mp3float                truemotion1
+2024-04-23 15:52:18 atrac9                  mp3on4                  truemotion2
+2024-04-23 15:52:18 aura                    mp3on4float             truemotion2rt
+2024-04-23 15:52:18 aura2                   mpc7                    truespeech
+2024-04-23 15:52:18 av1                     mpc8                    tscc
+2024-04-23 15:52:18 avrn                    mpeg1_v4l2m2m           tscc2
+2024-04-23 15:52:18 avrp                    mpeg1video              tta
+2024-04-23 15:52:18 avs                     mpeg2_v4l2m2m           twinvq
+2024-04-23 15:52:18 avui                    mpeg2video              txd
+2024-04-23 15:52:18 bethsoftvid             mpeg4                   ulti
+2024-04-23 15:52:18 bfi                     mpeg4_v4l2m2m           utvideo
+2024-04-23 15:52:18 bink                    mpegvideo               v210
+2024-04-23 15:52:18 binkaudio_dct           mpl2                    v210x
+2024-04-23 15:52:18 binkaudio_rdft          msa1                    v308
+2024-04-23 15:52:18 bintext                 mscc                    v408
+2024-04-23 15:52:18 bitpacked               msmpeg4v1               v410
+2024-04-23 15:52:18 bmp                     msmpeg4v2               vb
+2024-04-23 15:52:18 bmv_audio               msmpeg4v3               vble
+2024-04-23 15:52:18 bmv_video               msnsiren                vbn
+2024-04-23 15:52:18 bonk                    msp2                    vc1
+2024-04-23 15:52:18 brender_pix             msrle                   vc1_v4l2m2m
+2024-04-23 15:52:18 c93                     mss1                    vc1image
+2024-04-23 15:52:18 cavs                    mss2                    vcr1
+2024-04-23 15:52:18 cbd2_dpcm               msvideo1                vmdaudio
+2024-04-23 15:52:18 ccaption                mszh                    vmdvideo
+2024-04-23 15:52:18 cdgraphics              mts2                    vmix
+2024-04-23 15:52:18 cdtoons                 mv30                    vmnc
+2024-04-23 15:52:18 cdxl                    mvc1                    vnull
+2024-04-23 15:52:18 cfhd                    mvc2                    vorbis
+2024-04-23 15:52:18 cinepak                 mvdv                    vp3
+2024-04-23 15:52:18 clearvideo              mvha                    vp4
+2024-04-23 15:52:18 cljr                    mwsc                    vp5
+2024-04-23 15:52:18 cllc                    mxpeg                   vp6
+2024-04-23 15:52:18 comfortnoise            nellymoser              vp6a
+2024-04-23 15:52:18 cook                    notchlc                 vp6f
+2024-04-23 15:52:18 cpia                    nuv                     vp7
+2024-04-23 15:52:18 cri                     on2avc                  vp8
+2024-04-23 15:52:18 cscd                    opus                    vp8_v4l2m2m
+2024-04-23 15:52:18 cyuv                    osq                     vp9
+2024-04-23 15:52:18 dca                     paf_audio               vp9_v4l2m2m
+2024-04-23 15:52:18 dds                     paf_video               vplayer
+2024-04-23 15:52:18 derf_dpcm               pam                     vqa
+2024-04-23 15:52:18 dfa                     pbm                     vqc
+2024-04-23 15:52:18 dfpwm                   pcm_alaw                vvc
+2024-04-23 15:52:18 dirac                   pcm_bluray              wady_dpcm
+2024-04-23 15:52:18 dnxhd                   pcm_dvd                 wavarc
+2024-04-23 15:52:18 dolby_e                 pcm_f16le               wavpack
+2024-04-23 15:52:18 dpx                     pcm_f24le               wbmp
+2024-04-23 15:52:18 dsd_lsbf                pcm_f32be               wcmv
+2024-04-23 15:52:18 dsd_lsbf_planar         pcm_f32le               webp
+2024-04-23 15:52:18 dsd_msbf                pcm_f64be               webvtt
+2024-04-23 15:52:18 dsd_msbf_planar         pcm_f64le               wmalossless
+2024-04-23 15:52:18 dsicinaudio             pcm_lxf                 wmapro
+2024-04-23 15:52:18 dsicinvideo             pcm_mulaw               wmav1
+2024-04-23 15:52:18 dss_sp                  pcm_s16be               wmav2
+2024-04-23 15:52:18 dst                     pcm_s16be_planar        wmavoice
+2024-04-23 15:52:18 dvaudio                 pcm_s16le               wmv1
+2024-04-23 15:52:18 dvbsub                  pcm_s16le_planar        wmv2
+2024-04-23 15:52:18 dvdsub                  pcm_s24be               wmv3
+2024-04-23 15:52:18 dvvideo                 pcm_s24daud             wmv3image
+2024-04-23 15:52:18 dxa                     pcm_s24le               wnv1
+2024-04-23 15:52:18 dxtory                  pcm_s24le_planar        wrapped_avframe
+2024-04-23 15:52:18 dxv                     pcm_s32be               ws_snd1
+2024-04-23 15:52:18 eac3                    pcm_s32le               xan_dpcm
+2024-04-23 15:52:18 eacmv                   pcm_s32le_planar        xan_wc3
+2024-04-23 15:52:18 eamad                   pcm_s64be               xan_wc4
+2024-04-23 15:52:18 eatgq                   pcm_s64le               xbin
+2024-04-23 15:52:18 eatgv                   pcm_s8                  xbm
+2024-04-23 15:52:18 eatqi                   pcm_s8_planar           xface
+2024-04-23 15:52:18 eightbps                pcm_sga                 xl
+2024-04-23 15:52:18 eightsvx_exp            pcm_u16be               xma1
+2024-04-23 15:52:18 eightsvx_fib            pcm_u16le               xma2
+2024-04-23 15:52:18 escape124               pcm_u24be               xpm
+2024-04-23 15:52:18 escape130               pcm_u24le               xsub
+2024-04-23 15:52:18 evrc                    pcm_u32be               xwd
+2024-04-23 15:52:18 exr                     pcm_u32le               y41p
+2024-04-23 15:52:18 fastaudio               pcm_u8                  ylc
+2024-04-23 15:52:18 ffv1                    pcm_vidc                yop
+2024-04-23 15:52:18 ffvhuff                 pcx                     yuv4
+2024-04-23 15:52:18 ffwavesynth             pdv                     zero12v
+2024-04-23 15:52:18 fic                     pfm                     zerocodec
+2024-04-23 15:52:18 fits                    pgm                     zlib
+2024-04-23 15:52:18 flac                    pgmyuv                  zmbv
+2024-04-23 15:52:18 flashsv                 pgssub
+2024-04-23 15:52:18 flashsv2                pgx
+2024-04-23 15:52:18 
+2024-04-23 15:52:18 Enabled encoders:
+2024-04-23 15:52:18 a64multi                h264_v4l2m2m            png
+2024-04-23 15:52:18 a64multi5               hdr                     ppm
+2024-04-23 15:52:18 aac                     hevc_v4l2m2m            prores
+2024-04-23 15:52:18 ac3                     huffyuv                 prores_aw
+2024-04-23 15:52:18 ac3_fixed               jpeg2000                prores_ks
+2024-04-23 15:52:18 adpcm_adx               jpegls                  qoi
+2024-04-23 15:52:18 adpcm_argo              ljpeg                   qtrle
+2024-04-23 15:52:18 adpcm_g722              magicyuv                r10k
+2024-04-23 15:52:18 adpcm_g726              mjpeg                   r210
+2024-04-23 15:52:18 adpcm_g726le            mlp                     ra_144
+2024-04-23 15:52:18 adpcm_ima_alp           movtext                 rawvideo
+2024-04-23 15:52:18 adpcm_ima_amv           mp2                     roq
+2024-04-23 15:52:18 adpcm_ima_apm           mp2fixed                roq_dpcm
+2024-04-23 15:52:18 adpcm_ima_qt            mpeg1video              rpza
+2024-04-23 15:52:18 adpcm_ima_ssi           mpeg2video              rv10
+2024-04-23 15:52:18 adpcm_ima_wav           mpeg4                   rv20
+2024-04-23 15:52:18 adpcm_ima_ws            mpeg4_v4l2m2m           s302m
+2024-04-23 15:52:18 adpcm_ms                msmpeg4v2               sbc
+2024-04-23 15:52:18 adpcm_swf               msmpeg4v3               sgi
+2024-04-23 15:52:18 adpcm_yamaha            msrle                   smc
+2024-04-23 15:52:18 alac                    msvideo1                snow
+2024-04-23 15:52:18 alias_pix               nellymoser              sonic
+2024-04-23 15:52:18 amv                     opus                    sonic_ls
+2024-04-23 15:52:18 anull                   pam                     speedhq
+2024-04-23 15:52:18 apng                    pbm                     srt
+2024-04-23 15:52:18 aptx                    pcm_alaw                ssa
+2024-04-23 15:52:18 aptx_hd                 pcm_bluray              subrip
+2024-04-23 15:52:18 ass                     pcm_dvd                 sunrast
+2024-04-23 15:52:18 asv1                    pcm_f32be               svq1
+2024-04-23 15:52:18 asv2                    pcm_f32le               targa
+2024-04-23 15:52:18 avrp                    pcm_f64be               text
+2024-04-23 15:52:18 avui                    pcm_f64le               tiff
+2024-04-23 15:52:18 bitpacked               pcm_mulaw               truehd
+2024-04-23 15:52:18 bmp                     pcm_s16be               tta
+2024-04-23 15:52:18 cfhd                    pcm_s16be_planar        ttml
+2024-04-23 15:52:18 cinepak                 pcm_s16le               utvideo
+2024-04-23 15:52:18 cljr                    pcm_s16le_planar        v210
+2024-04-23 15:52:18 comfortnoise            pcm_s24be               v308
+2024-04-23 15:52:18 dca                     pcm_s24daud             v408
+2024-04-23 15:52:18 dfpwm                   pcm_s24le               v410
+2024-04-23 15:52:18 dnxhd                   pcm_s24le_planar        vbn
+2024-04-23 15:52:18 dpx                     pcm_s32be               vc2
+2024-04-23 15:52:18 dvbsub                  pcm_s32le               vnull
+2024-04-23 15:52:18 dvdsub                  pcm_s32le_planar        vorbis
+2024-04-23 15:52:18 dvvideo                 pcm_s64be               vp8_v4l2m2m
+2024-04-23 15:52:18 dxv                     pcm_s64le               wavpack
+2024-04-23 15:52:18 eac3                    pcm_s8                  wbmp
+2024-04-23 15:52:18 exr                     pcm_s8_planar           webvtt
+2024-04-23 15:52:18 ffv1                    pcm_u16be               wmav1
+2024-04-23 15:52:18 ffvhuff                 pcm_u16le               wmav2
+2024-04-23 15:52:18 fits                    pcm_u24be               wmv1
+2024-04-23 15:52:18 flac                    pcm_u24le               wmv2
+2024-04-23 15:52:18 flashsv                 pcm_u32be               wrapped_avframe
+2024-04-23 15:52:18 flashsv2                pcm_u32le               xbm
+2024-04-23 15:52:18 flv                     pcm_u8                  xface
+2024-04-23 15:52:18 g723_1                  pcm_vidc                xsub
+2024-04-23 15:52:18 gif                     pcx                     xwd
+2024-04-23 15:52:18 h261                    pfm                     y41p
+2024-04-23 15:52:18 h263                    pgm                     yuv4
+2024-04-23 15:52:18 h263_v4l2m2m            pgmyuv                  zlib
+2024-04-23 15:52:18 h263p                   phm                     zmbv
+2024-04-23 15:52:18 
+2024-04-23 15:52:18 Enabled hwaccels:
+2024-04-23 15:52:18 
+2024-04-23 15:52:18 Enabled parsers:
+2024-04-23 15:52:18 aac                     dvdsub                  mpegaudio
+2024-04-23 15:52:18 aac_latm                evc                     mpegvideo
+2024-04-23 15:52:18 ac3                     flac                    opus
+2024-04-23 15:52:18 adx                     ftr                     png
+2024-04-23 15:52:18 amr                     g723_1                  pnm
+2024-04-23 15:52:18 av1                     g729                    qoi
+2024-04-23 15:52:18 avs2                    gif                     rv34
+2024-04-23 15:52:18 avs3                    gsm                     sbc
+2024-04-23 15:52:18 bmp                     h261                    sipr
+2024-04-23 15:52:18 cavsvideo               h263                    tak
+2024-04-23 15:52:18 cook                    h264                    vc1
+2024-04-23 15:52:18 cri                     hdr                     vorbis
+2024-04-23 15:52:18 dca                     hevc                    vp3
+2024-04-23 15:52:18 dirac                   ipu                     vp8
+2024-04-23 15:52:18 dnxhd                   jpeg2000                vp9
+2024-04-23 15:52:18 dolby_e                 jpegxl                  vvc
+2024-04-23 15:52:18 dpx                     misc4                   webp
+2024-04-23 15:52:18 dvaudio                 mjpeg                   xbm
+2024-04-23 15:52:18 dvbsub                  mlp                     xma
+2024-04-23 15:52:18 dvd_nav                 mpeg4video              xwd
+2024-04-23 15:52:18 
+2024-04-23 15:52:18 Enabled demuxers:
+2024-04-23 15:52:18 aa                      idf                     pcm_s16be
+2024-04-23 15:52:18 aac                     iff                     pcm_s16le
+2024-04-23 15:52:18 aax                     ifv                     pcm_s24be
+2024-04-23 15:52:18 ac3                     ilbc                    pcm_s24le
+2024-04-23 15:52:18 ac4                     image2                  pcm_s32be
+2024-04-23 15:52:18 ace                     image2_alias_pix        pcm_s32le
+2024-04-23 15:52:18 acm                     image2_brender_pix      pcm_s8
+2024-04-23 15:52:18 act                     image2pipe              pcm_u16be
+2024-04-23 15:52:18 adf                     image_bmp_pipe          pcm_u16le
+2024-04-23 15:52:18 adp                     image_cri_pipe          pcm_u24be
+2024-04-23 15:52:18 ads                     image_dds_pipe          pcm_u24le
+2024-04-23 15:52:18 adx                     image_dpx_pipe          pcm_u32be
+2024-04-23 15:52:18 aea                     image_exr_pipe          pcm_u32le
+2024-04-23 15:52:18 afc                     image_gem_pipe          pcm_u8
+2024-04-23 15:52:18 aiff                    image_gif_pipe          pcm_vidc
+2024-04-23 15:52:18 aix                     image_hdr_pipe          pdv
+2024-04-23 15:52:18 alp                     image_j2k_pipe          pjs
+2024-04-23 15:52:18 amr                     image_jpeg_pipe         pmp
+2024-04-23 15:52:18 amrnb                   image_jpegls_pipe       pp_bnk
+2024-04-23 15:52:18 amrwb                   image_jpegxl_pipe       pva
+2024-04-23 15:52:18 anm                     image_pam_pipe          pvf
+2024-04-23 15:52:18 apac                    image_pbm_pipe          qcp
+2024-04-23 15:52:18 apc                     image_pcx_pipe          qoa
+2024-04-23 15:52:18 ape                     image_pfm_pipe          r3d
+2024-04-23 15:52:18 apm                     image_pgm_pipe          rawvideo
+2024-04-23 15:52:18 apng                    image_pgmyuv_pipe       rcwt
+2024-04-23 15:52:18 aptx                    image_pgx_pipe          realtext
+2024-04-23 15:52:18 aptx_hd                 image_phm_pipe          redspark
+2024-04-23 15:52:18 aqtitle                 image_photocd_pipe      rka
+2024-04-23 15:52:18 argo_asf                image_pictor_pipe       rl2
+2024-04-23 15:52:18 argo_brp                image_png_pipe          rm
+2024-04-23 15:52:18 argo_cvg                image_ppm_pipe          roq
+2024-04-23 15:52:18 asf                     image_psd_pipe          rpl
+2024-04-23 15:52:18 asf_o                   image_qdraw_pipe        rsd
+2024-04-23 15:52:18 ass                     image_qoi_pipe          rso
+2024-04-23 15:52:18 ast                     image_sgi_pipe          rtp
+2024-04-23 15:52:18 au                      image_sunrast_pipe      rtsp
+2024-04-23 15:52:18 av1                     image_svg_pipe          s337m
+2024-04-23 15:52:18 avi                     image_tiff_pipe         sami
+2024-04-23 15:52:18 avr                     image_vbn_pipe          sap
+2024-04-23 15:52:18 avs                     image_webp_pipe         sbc
+2024-04-23 15:52:18 avs2                    image_xbm_pipe          sbg
+2024-04-23 15:52:18 avs3                    image_xpm_pipe          scc
+2024-04-23 15:52:18 bethsoftvid             image_xwd_pipe          scd
+2024-04-23 15:52:18 bfi                     ingenient               sdns
+2024-04-23 15:52:18 bfstm                   ipmovie                 sdp
+2024-04-23 15:52:18 bink                    ipu                     sdr2
+2024-04-23 15:52:18 binka                   ircam                   sds
+2024-04-23 15:52:18 bintext                 iss                     sdx
+2024-04-23 15:52:18 bit                     iv8                     segafilm
+2024-04-23 15:52:18 bitpacked               ivf                     ser
+2024-04-23 15:52:18 bmv                     ivr                     sga
+2024-04-23 15:52:18 boa                     jacosub                 shorten
+2024-04-23 15:52:18 bonk                    jpegxl_anim             siff
+2024-04-23 15:52:18 brstm                   jv                      simbiosis_imx
+2024-04-23 15:52:18 c93                     kux                     sln
+2024-04-23 15:52:18 caf                     kvag                    smacker
+2024-04-23 15:52:18 cavsvideo               laf                     smjpeg
+2024-04-23 15:52:18 cdg                     lc3                     smush
+2024-04-23 15:52:18 cdxl                    live_flv                sol
+2024-04-23 15:52:18 cine                    lmlm4                   sox
+2024-04-23 15:52:18 codec2                  loas                    spdif
+2024-04-23 15:52:18 codec2raw               lrc                     srt
+2024-04-23 15:52:18 concat                  luodat                  stl
+2024-04-23 15:52:18 data                    lvf                     str
+2024-04-23 15:52:18 daud                    lxf                     subviewer
+2024-04-23 15:52:18 dcstr                   m4v                     subviewer1
+2024-04-23 15:52:18 derf                    matroska                sup
+2024-04-23 15:52:18 dfa                     mca                     svag
+2024-04-23 15:52:18 dfpwm                   mcc                     svs
+2024-04-23 15:52:18 dhav                    mgsts                   swf
+2024-04-23 15:52:18 dirac                   microdvd                tak
+2024-04-23 15:52:18 dnxhd                   mjpeg                   tedcaptions
+2024-04-23 15:52:18 dsf                     mjpeg_2000              thp
+2024-04-23 15:52:18 dsicin                  mlp                     threedostr
+2024-04-23 15:52:18 dss                     mlv                     tiertexseq
+2024-04-23 15:52:18 dts                     mm                      tmv
+2024-04-23 15:52:18 dtshd                   mmf                     truehd
+2024-04-23 15:52:18 dv                      mods                    tta
+2024-04-23 15:52:18 dvbsub                  moflex                  tty
+2024-04-23 15:52:18 dvbtxt                  mov                     txd
+2024-04-23 15:52:18 dxa                     mp3                     ty
+2024-04-23 15:52:18 ea                      mpc                     usm
+2024-04-23 15:52:18 ea_cdata                mpc8                    v210
+2024-04-23 15:52:18 eac3                    mpegps                  v210x
+2024-04-23 15:52:18 epaf                    mpegts                  vag
+2024-04-23 15:52:18 evc                     mpegtsraw               vc1
+2024-04-23 15:52:18 ffmetadata              mpegvideo               vc1t
+2024-04-23 15:52:18 filmstrip               mpjpeg                  vividas
+2024-04-23 15:52:18 fits                    mpl2                    vivo
+2024-04-23 15:52:18 flac                    mpsub                   vmd
+2024-04-23 15:52:18 flic                    msf                     vobsub
+2024-04-23 15:52:18 flv                     msnwc_tcp               voc
+2024-04-23 15:52:18 fourxm                  msp                     vpk
+2024-04-23 15:52:18 frm                     mtaf                    vplayer
+2024-04-23 15:52:18 fsb                     mtv                     vqf
+2024-04-23 15:52:18 fwse                    musx                    vvc
+2024-04-23 15:52:18 g722                    mv                      w64
+2024-04-23 15:52:18 g723_1                  mvi                     wady
+2024-04-23 15:52:18 g726                    mxf                     wav
+2024-04-23 15:52:18 g726le                  mxg                     wavarc
+2024-04-23 15:52:18 g729                    nc                      wc3
+2024-04-23 15:52:18 gdv                     nistsphere              webm_dash_manifest
+2024-04-23 15:52:18 genh                    nsp                     webvtt
+2024-04-23 15:52:18 gif                     nsv                     wsaud
+2024-04-23 15:52:18 gsm                     nut                     wsd
+2024-04-23 15:52:18 gxf                     nuv                     wsvqa
+2024-04-23 15:52:18 h261                    obu                     wtv
+2024-04-23 15:52:18 h263                    ogg                     wv
+2024-04-23 15:52:18 h264                    oma                     wve
+2024-04-23 15:52:18 hca                     osq                     xa
+2024-04-23 15:52:18 hcom                    paf                     xbin
+2024-04-23 15:52:18 hevc                    pcm_alaw                xmd
+2024-04-23 15:52:18 hls                     pcm_f32be               xmv
+2024-04-23 15:52:18 hnm                     pcm_f32le               xvag
+2024-04-23 15:52:18 iamf                    pcm_f64be               xwma
+2024-04-23 15:52:18 ico                     pcm_f64le               yop
+2024-04-23 15:52:18 idcin                   pcm_mulaw               yuv4mpegpipe
+2024-04-23 15:52:18 
+2024-04-23 15:52:18 Enabled muxers:
+2024-04-23 15:52:18 a64                     h263                    pcm_s16le
+2024-04-23 15:52:18 ac3                     h264                    pcm_s24be
+2024-04-23 15:52:18 ac4                     hash                    pcm_s24le
+2024-04-23 15:52:18 adts                    hds                     pcm_s32be
+2024-04-23 15:52:18 adx                     hevc                    pcm_s32le
+2024-04-23 15:52:18 aea                     hls                     pcm_s8
+2024-04-23 15:52:18 aiff                    iamf                    pcm_u16be
+2024-04-23 15:52:18 alp                     ico                     pcm_u16le
+2024-04-23 15:52:18 amr                     ilbc                    pcm_u24be
+2024-04-23 15:52:18 amv                     image2                  pcm_u24le
+2024-04-23 15:52:18 apm                     image2pipe              pcm_u32be
+2024-04-23 15:52:18 apng                    ipod                    pcm_u32le
+2024-04-23 15:52:18 aptx                    ircam                   pcm_u8
+2024-04-23 15:52:18 aptx_hd                 ismv                    pcm_vidc
+2024-04-23 15:52:18 argo_asf                ivf                     psp
+2024-04-23 15:52:18 argo_cvg                jacosub                 rawvideo
+2024-04-23 15:52:18 asf                     kvag                    rcwt
+2024-04-23 15:52:18 asf_stream              latm                    rm
+2024-04-23 15:52:18 ass                     lc3                     roq
+2024-04-23 15:52:18 ast                     lrc                     rso
+2024-04-23 15:52:18 au                      m4v                     rtp
+2024-04-23 15:52:18 avi                     matroska                rtp_mpegts
+2024-04-23 15:52:18 avif                    matroska_audio          rtsp
+2024-04-23 15:52:18 avm2                    md5                     sap
+2024-04-23 15:52:18 avs2                    microdvd                sbc
+2024-04-23 15:52:18 avs3                    mjpeg                   scc
+2024-04-23 15:52:18 bit                     mkvtimestamp_v2         segafilm
+2024-04-23 15:52:18 caf                     mlp                     segment
+2024-04-23 15:52:18 cavsvideo               mmf                     smjpeg
+2024-04-23 15:52:18 codec2                  mov                     smoothstreaming
+2024-04-23 15:52:18 codec2raw               mp2                     sox
+2024-04-23 15:52:18 crc                     mp3                     spdif
+2024-04-23 15:52:18 dash                    mp4                     spx
+2024-04-23 15:52:18 data                    mpeg1system             srt
+2024-04-23 15:52:18 daud                    mpeg1vcd                stream_segment
+2024-04-23 15:52:18 dfpwm                   mpeg1video              streamhash
+2024-04-23 15:52:18 dirac                   mpeg2dvd                sup
+2024-04-23 15:52:18 dnxhd                   mpeg2svcd               swf
+2024-04-23 15:52:18 dts                     mpeg2video              tee
+2024-04-23 15:52:18 dv                      mpeg2vob                tg2
+2024-04-23 15:52:18 eac3                    mpegts                  tgp
+2024-04-23 15:52:18 evc                     mpjpeg                  truehd
+2024-04-23 15:52:18 f4v                     mxf                     tta
+2024-04-23 15:52:18 ffmetadata              mxf_d10                 ttml
+2024-04-23 15:52:18 fifo                    mxf_opatom              uncodedframecrc
+2024-04-23 15:52:18 filmstrip               null                    vc1
+2024-04-23 15:52:18 fits                    nut                     vc1t
+2024-04-23 15:52:18 flac                    obu                     voc
+2024-04-23 15:52:18 flv                     oga                     vvc
+2024-04-23 15:52:18 framecrc                ogg                     w64
+2024-04-23 15:52:18 framehash               ogv                     wav
+2024-04-23 15:52:18 framemd5                oma                     webm
+2024-04-23 15:52:18 g722                    opus                    webm_chunk
+2024-04-23 15:52:18 g723_1                  pcm_alaw                webm_dash_manifest
+2024-04-23 15:52:18 g726                    pcm_f32be               webp
+2024-04-23 15:52:18 g726le                  pcm_f32le               webvtt
+2024-04-23 15:52:18 gif                     pcm_f64be               wsaud
+2024-04-23 15:52:18 gsm                     pcm_f64le               wtv
+2024-04-23 15:52:18 gxf                     pcm_mulaw               wv
+2024-04-23 15:52:18 h261                    pcm_s16be               yuv4mpegpipe
+2024-04-23 15:52:18 
+2024-04-23 15:52:18 Enabled protocols:
+2024-04-23 15:52:18 async                   gopher                  rtmp
+2024-04-23 15:52:18 cache                   hls                     rtmpt
+2024-04-23 15:52:18 concat                  http                    rtp
+2024-04-23 15:52:18 concatf                 httpproxy               srtp
+2024-04-23 15:52:18 crypto                  icecast                 subfile
+2024-04-23 15:52:18 data                    md5                     tcp
+2024-04-23 15:52:18 fd                      mmsh                    tee
+2024-04-23 15:52:18 ffrtmphttp              mmst                    udp
+2024-04-23 15:52:18 file                    pipe                    udplite
+2024-04-23 15:52:18 ftp                     prompeg                 unix
+2024-04-23 15:52:18 
+2024-04-23 15:52:18 Enabled filters:
+2024-04-23 15:52:18 a3dscope                colortemperature        nlmeans
+2024-04-23 15:52:18 aap                     compand                 noformat
+2024-04-23 15:52:18 abench                  compensationdelay       noise
+2024-04-23 15:52:18 abitscope               concat                  normalize
+2024-04-23 15:52:18 acompressor             convolution             null
+2024-04-23 15:52:18 acontrast               convolve                nullsink
+2024-04-23 15:52:18 acopy                   copy                    nullsrc
+2024-04-23 15:52:18 acrossfade              corr                    oscilloscope
+2024-04-23 15:52:18 acrossover              crop                    overlay
+2024-04-23 15:52:18 acrusher                crossfeed               pad
+2024-04-23 15:52:18 acue                    crystalizer             pal100bars
+2024-04-23 15:52:18 addroi                  cue                     pal75bars
+2024-04-23 15:52:18 adeclick                curves                  palettegen
+2024-04-23 15:52:18 adeclip                 datascope               paletteuse
+2024-04-23 15:52:18 adecorrelate            dblur                   pan
+2024-04-23 15:52:18 adelay                  dcshift                 perms
+2024-04-23 15:52:18 adenorm                 dctdnoiz                photosensitivity
+2024-04-23 15:52:18 aderivative             deband                  pixdesctest
+2024-04-23 15:52:18 adrawgraph              deblock                 pixelize
+2024-04-23 15:52:18 adrc                    decimate                pixscope
+2024-04-23 15:52:18 adynamicequalizer       deconvolve              premultiply
+2024-04-23 15:52:18 adynamicsmooth          dedot                   prewitt
+2024-04-23 15:52:18 aecho                   deesser                 pseudocolor
+2024-04-23 15:52:18 aemphasis               deflate                 psnr
+2024-04-23 15:52:18 aeval                   deflicker               qp
+2024-04-23 15:52:18 aevalsrc                dejudder                random
+2024-04-23 15:52:18 aexciter                derain                  readeia608
+2024-04-23 15:52:18 afade                   deshake                 readvitc
+2024-04-23 15:52:18 afdelaysrc              despill                 realtime
+2024-04-23 15:52:18 afftdn                  detelecine              remap
+2024-04-23 15:52:18 afftfilt                dialoguenhance          removegrain
+2024-04-23 15:52:18 afir                    dilation                removelogo
+2024-04-23 15:52:18 afireqsrc               displace                replaygain
+2024-04-23 15:52:18 afirsrc                 dnn_classify            reverse
+2024-04-23 15:52:18 aformat                 dnn_detect              rgbashift
+2024-04-23 15:52:18 afreqshift              dnn_processing          rgbtestsrc
+2024-04-23 15:52:18 afwtdn                  doubleweave             roberts
+2024-04-23 15:52:18 agate                   drawbox                 rotate
+2024-04-23 15:52:18 agraphmonitor           drawgraph               scale
+2024-04-23 15:52:18 ahistogram              drawgrid                scale2ref
+2024-04-23 15:52:18 aiir                    drmeter                 scdet
+2024-04-23 15:52:18 aintegral               dynaudnorm              scharr
+2024-04-23 15:52:18 ainterleave             earwax                  scroll
+2024-04-23 15:52:18 alatency                ebur128                 segment
+2024-04-23 15:52:18 alimiter                edgedetect              select
+2024-04-23 15:52:18 allpass                 elbg                    selectivecolor
+2024-04-23 15:52:18 allrgb                  entropy                 sendcmd
+2024-04-23 15:52:18 allyuv                  epx                     separatefields
+2024-04-23 15:52:18 aloop                   equalizer               setdar
+2024-04-23 15:52:18 alphaextract            erosion                 setfield
+2024-04-23 15:52:18 alphamerge              estdif                  setparams
+2024-04-23 15:52:18 amerge                  exposure                setpts
+2024-04-23 15:52:18 ametadata               extractplanes           setrange
+2024-04-23 15:52:18 amix                    extrastereo             setsar
+2024-04-23 15:52:18 amovie                  fade                    settb
+2024-04-23 15:52:18 amplify                 feedback                shear
+2024-04-23 15:52:18 amultiply               fftdnoiz                showcqt
+2024-04-23 15:52:18 anequalizer             fftfilt                 showcwt
+2024-04-23 15:52:18 anlmdn                  field                   showfreqs
+2024-04-23 15:52:18 anlmf                   fieldhint               showinfo
+2024-04-23 15:52:18 anlms                   fieldmatch              showpalette
+2024-04-23 15:52:18 anoisesrc               fieldorder              showspatial
+2024-04-23 15:52:18 anull                   fillborders             showspectrum
+2024-04-23 15:52:18 anullsink               firequalizer            showspectrumpic
+2024-04-23 15:52:18 anullsrc                flanger                 showvolume
+2024-04-23 15:52:18 apad                    floodfill               showwaves
+2024-04-23 15:52:18 aperms                  format                  showwavespic
+2024-04-23 15:52:18 aphasemeter             fps                     shuffleframes
+2024-04-23 15:52:18 aphaser                 framepack               shufflepixels
+2024-04-23 15:52:18 aphaseshift             framerate               shuffleplanes
+2024-04-23 15:52:18 apsnr                   framestep               sidechaincompress
+2024-04-23 15:52:18 apsyclip                freezedetect            sidechaingate
+2024-04-23 15:52:18 apulsator               freezeframes            sidedata
+2024-04-23 15:52:18 arealtime               fsync                   sierpinski
+2024-04-23 15:52:18 aresample               gblur                   signalstats
+2024-04-23 15:52:18 areverse                geq                     silencedetect
+2024-04-23 15:52:18 arls                    gradfun                 silenceremove
+2024-04-23 15:52:18 arnndn                  gradients               sinc
+2024-04-23 15:52:18 asdr                    graphmonitor            sine
+2024-04-23 15:52:18 asegment                grayworld               siti
+2024-04-23 15:52:18 aselect                 greyedge                smptebars
+2024-04-23 15:52:18 asendcmd                guided                  smptehdbars
+2024-04-23 15:52:18 asetnsamples            haas                    sobel
+2024-04-23 15:52:18 asetpts                 haldclut                spectrumsynth
+2024-04-23 15:52:18 asetrate                haldclutsrc             speechnorm
+2024-04-23 15:52:18 asettb                  hdcd                    split
+2024-04-23 15:52:18 ashowinfo               headphone               sr
+2024-04-23 15:52:18 asidedata               hflip                   ssim
+2024-04-23 15:52:18 asisdr                  highpass                ssim360
+2024-04-23 15:52:18 asoftclip               highshelf               stereotools
+2024-04-23 15:52:18 aspectralstats          hilbert                 stereowiden
+2024-04-23 15:52:18 asplit                  histogram               streamselect
+2024-04-23 15:52:18 astats                  hqx                     superequalizer
+2024-04-23 15:52:18 astreamselect           hstack                  surround
+2024-04-23 15:52:18 asubboost               hsvhold                 swaprect
+2024-04-23 15:52:18 asubcut                 hsvkey                  swapuv
+2024-04-23 15:52:18 asupercut               hue                     tblend
+2024-04-23 15:52:18 asuperpass              huesaturation           telecine
+2024-04-23 15:52:18 asuperstop              hwdownload              testsrc
+2024-04-23 15:52:18 atadenoise              hwmap                   testsrc2
+2024-04-23 15:52:18 atempo                  hwupload                thistogram
+2024-04-23 15:52:18 atilt                   hysteresis              threshold
+2024-04-23 15:52:18 atrim                   identity                thumbnail
+2024-04-23 15:52:18 avectorscope            idet                    tile
+2024-04-23 15:52:18 avgblur                 il                      tiltandshift
+2024-04-23 15:52:18 avsynctest              inflate                 tiltshelf
+2024-04-23 15:52:18 axcorrelate             interleave              tlut2
+2024-04-23 15:52:18 backgroundkey           join                    tmedian
+2024-04-23 15:52:18 bandpass                kirsch                  tmidequalizer
+2024-04-23 15:52:18 bandreject              lagfun                  tmix
+2024-04-23 15:52:18 bass                    latency                 tonemap
+2024-04-23 15:52:18 bbox                    lenscorrection          tpad
+2024-04-23 15:52:18 bench                   life                    transpose
+2024-04-23 15:52:18 bilateral               limitdiff               treble
+2024-04-23 15:52:18 biquad                  limiter                 tremolo
+2024-04-23 15:52:18 bitplanenoise           loop                    trim
+2024-04-23 15:52:18 blackdetect             loudnorm                unpremultiply
+2024-04-23 15:52:18 blend                   lowpass                 unsharp
+2024-04-23 15:52:18 blockdetect             lowshelf                untile
+2024-04-23 15:52:18 blurdetect              lumakey                 v360
+2024-04-23 15:52:18 bm3d                    lut                     varblur
+2024-04-23 15:52:18 bwdif                   lut1d                   vectorscope
+2024-04-23 15:52:18 cas                     lut2                    vflip
+2024-04-23 15:52:18 ccrepack                lut3d                   vfrdet
+2024-04-23 15:52:18 cellauto                lutrgb                  vibrance
+2024-04-23 15:52:18 channelmap              lutyuv                  vibrato
+2024-04-23 15:52:18 channelsplit            mandelbrot              vif
+2024-04-23 15:52:18 chorus                  maskedclamp             vignette
+2024-04-23 15:52:18 chromahold              maskedmax               virtualbass
+2024-04-23 15:52:18 chromakey               maskedmerge             vmafmotion
+2024-04-23 15:52:18 chromanr                maskedmin               volume
+2024-04-23 15:52:18 chromashift             maskedthreshold         volumedetect
+2024-04-23 15:52:18 ciescope                maskfun                 vstack
+2024-04-23 15:52:18 codecview               mcompand                w3fdif
+2024-04-23 15:52:18 color                   median                  waveform
+2024-04-23 15:52:18 colorbalance            mergeplanes             weave
+2024-04-23 15:52:18 colorchannelmixer       mestimate               xbr
+2024-04-23 15:52:18 colorchart              metadata                xcorrelate
+2024-04-23 15:52:18 colorcontrast           midequalizer            xfade
+2024-04-23 15:52:18 colorcorrect            minterpolate            xmedian
+2024-04-23 15:52:18 colorhold               mix                     xstack
+2024-04-23 15:52:18 colorize                monochrome              yadif
+2024-04-23 15:52:18 colorkey                morpho                  yaepblur
+2024-04-23 15:52:18 colorlevels             movie                   yuvtestsrc
+2024-04-23 15:52:18 colormap                msad                    zoneplate
+2024-04-23 15:52:18 colorspace              multiply                zoompan
+2024-04-23 15:52:18 colorspectrum           negate
+2024-04-23 15:52:18 
+2024-04-23 15:52:18 Enabled bsfs:
+2024-04-23 15:52:18 aac_adtstoasc           h264_redundant_pps      pgs_frame_merge
+2024-04-23 15:52:18 av1_frame_merge         hapqa_extract           prores_metadata
+2024-04-23 15:52:18 av1_frame_split         hevc_metadata           remove_extradata
+2024-04-23 15:52:18 av1_metadata            hevc_mp4toannexb        setts
+2024-04-23 15:52:18 chomp                   imx_dump_header         showinfo
+2024-04-23 15:52:18 dca_core                media100_to_mjpegb      text2movsub
+2024-04-23 15:52:18 dts2pts                 mjpeg2jpeg              trace_headers
+2024-04-23 15:52:18 dump_extradata          mjpega_dump_header      truehd_core
+2024-04-23 15:52:18 dv_error_marker         mov2textsub             vp9_metadata
+2024-04-23 15:52:18 eac3_core               mpeg2_metadata          vp9_raw_reorder
+2024-04-23 15:52:18 evc_frame_merge         mpeg4_unpack_bframes    vp9_superframe
+2024-04-23 15:52:18 extract_extradata       noise                   vp9_superframe_split
+2024-04-23 15:52:18 filter_units            null                    vvc_metadata
+2024-04-23 15:52:18 h264_metadata           opus_metadata           vvc_mp4toannexb
+2024-04-23 15:52:18 h264_mp4toannexb        pcm_rechunk
+2024-04-23 15:52:18 
+2024-04-23 15:52:18 Enabled indevs:
+2024-04-23 15:52:18 fbdev                   oss
+2024-04-23 15:52:18 lavfi                   v4l2
+2024-04-23 15:52:18 
+2024-04-23 15:52:18 Enabled outdevs:
+2024-04-23 15:52:18 fbdev                   oss                     v4l2
+2024-04-23 15:52:18 
+2024-04-23 15:52:18 License: nonfree and unredistributable
+2024-04-23 15:52:18 
+2024-04-23 15:52:18 WARNING: pkg-config not found, library detection may fail.
+2024-04-23 15:52:18 sed 's#@@PREFIX@@#/usr/local#' ffnvcodec.pc.in > ffnvcodec.pc
+2024-04-23 15:52:18 sed 's#@@PREFIX@@#/usr/local#' ffnvcodec.pc.in > ffnvcodec.pc
+2024-04-23 15:52:18 install -m 0755 -d '/usr/local/include/ffnvcodec'
+2024-04-23 15:52:18 install -m 0644 include/ffnvcodec/*.h '/usr/local/include/ffnvcodec'
+2024-04-23 15:52:18 install -m 0755 -d '/usr/local/lib/pkgconfig'
+2024-04-23 15:52:18 install -m 0644 ffnvcodec.pc '/usr/local/lib/pkgconfig'

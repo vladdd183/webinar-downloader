@@ -1,0 +1,29 @@
+# FROM nvidia/cuda:12.1.1-runtime-ubuntu20.04
+
+#вариант образа, который разрешает доступ nvcc
+FROM nvidia/cuda:12.4.1-devel-ubuntu22.04
+
+#иногда при скачивании ffmpeg начинает спрашивать время
+ENV DEBIAN_FRONTEND=noninteractive 
+
+RUN apt-get update && \
+    apt-get install -y python3 python-is-python3 python3-pip python3-dev && \
+    apt install -y git 
+    # apt install -y ffmpeg - не годится для запуска на gpu ?
+
+#ycтанавливаем рабочую директорию
+WORKDIR /app
+
+#устанавливаем зависимости
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt 
+
+#копии скриптов
+COPY mount_slides.py .
+COPY setupffmpeg.sh .
+
+#ffmpeg + запуск скрипта на монтирование
+RUN chmod +x /app/setupffmpeg.sh
+ENTRYPOINT ["/app/setupffmpeg.sh" ]
+
+

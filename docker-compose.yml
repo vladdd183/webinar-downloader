@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  dwnld:
+    build:
+      dockerfile: Dockerfile1
+    volumes:
+      - shared-data:/app/downloads
+
+
+  create:
+    depends_on:
+      - dwnld
+    build:
+      dockerfile: Dockerfile2
+    volumes:
+      - shared-data:/app/downloads
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+volumes:
+  shared-data:
