@@ -5,7 +5,6 @@ import subprocess
 import time
 
 
-
 def get_video_type(filename):
     filename = filename.lstrip('/app/downloads/')
     return filename.split('_')[-1].split('.')[0]
@@ -22,13 +21,12 @@ def test(files):
         for file in files:
             if check_slide(file):
                 f.write(f"file '{file}'\nduration 10\n")
-                print(f"file '{file}'\nduration 10\n")
 
     
         
 
     slides_conc_ffmpeg = [
-        '/app/nv-codec-headers/ffmpeg',
+        'ffmpeg',
         '-y',
         '-hwaccel',
         'cuda',
@@ -38,10 +36,10 @@ def test(files):
         '0',
         '-i',
         conc_f,
-        '-c:v',
-        'h264_nvenc',
-        '-b:a',
-        '128k',
+        # '-c:v',
+        # 'h264_nvenc',
+        # '-b:a',
+        # '128k',
         # '-preset',
         # 'ultrafast',
         '/app/downloads/test_vid.mp4'
@@ -49,10 +47,10 @@ def test(files):
     subprocess.run(slides_conc_ffmpeg, check=True)
 
 
-
+time.sleep(600)
 # subprocess.call('nvidia-smi')
 subprocess.call(['which', 'ffmpeg'])
-subprocess.call('/app/nv-codec-headers/ffmpeg')
+subprocess.call('ffmpeg')
 time.sleep(30)
 for file in os.listdir('/app/downloads'):
     if 'FILE' in file:
@@ -60,5 +58,3 @@ for file in os.listdir('/app/downloads'):
 files = [f'/app/downloads/{file}' for file in os.listdir('/app/downloads')]
 
 test(files)
-
-
