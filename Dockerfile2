@@ -1,8 +1,10 @@
-FROM nvidia/cuda:12.1.1-runtime-ubuntu20.04 
-RUN apt-get update && \
-    apt-get install -y python3 python-is-python3 python3-pip python3-dev && \
-    rm -rf /var/lib/apt/lists/*
-
+# FROM nvidia/cuda:12.1.1-runtime-ubuntu20.04
+FROM python:3
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get -y update && apt-get -y install ffmpeg imagemagick build-essential yasm cmake libtool libc6 libc6-dev unzip wget libnuma1 libnuma-dev
+#RUN apt-get update && \
+#    apt-get install -y python3 python-is-python3 python3-pip python3-dev ffmpeg && \
+#    rm -rf /var/lib/apt/lists/*
 
 
 # Устанавливаем рабочую директорию
@@ -12,7 +14,10 @@ COPY requirements.txt .
 # Устанавливаем зависимости
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY new_mount.py .
+RUN git clone https://git.videolan.org/git/ffmpeg/nv-codec-headers.git
+RUN cd nv-codec-headers && make install
 
+COPY new_mount.py .
+ENV PYTHONUNBUFFERED=0
 # Запускаем скрипт при старте контейнера
-CMD ["python", "new_mount.py"]
+CMD ["python", "-u", "new_mount.py"]
