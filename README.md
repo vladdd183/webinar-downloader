@@ -1,4 +1,4 @@
-# webinar-downloader
+## webinar-downloader
 UPD:
 1. В docker-compose1.yml внизу указываете айдишник (https://events.webinar.ru/21390906/1711152720/record-new/1794592932   айдишник это последнее число 1794592932) либо же можно прям ссылку указать.
 2. Запускаете download.bat
